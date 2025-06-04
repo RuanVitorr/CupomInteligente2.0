@@ -75,7 +75,7 @@ except Exception as e:
     print(e)
     # Aqui você pode colocar um tratamento extra, tipo salvar log, mandar alerta, etc.
     traceback.print_exc()
-    resultado = None  # ou algum valor padrão pra seguir o fluxo sem travar
+    resultado = None  # ou algum valor padrão pra seguir o fluxo sem travarasd
 
 # ----------- Etapa 5: Mostrar o resultado final -----------
 
