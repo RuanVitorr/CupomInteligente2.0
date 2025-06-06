@@ -7,7 +7,7 @@ def criar_gerente(conhecimento):
     llm = ChatOpenAI(
         model="gpt-4-turbo",
         temperature=0.7,
-        max_tokens=600,
+        max_tokens=400,
         openai_api_key=os.getenv("OPENAI_API_KEY"),
         openai_api_base=os.getenv("OPENAI_API_BASE")  # pega da variável .env
     )
