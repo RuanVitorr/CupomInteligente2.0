@@ -75,7 +75,6 @@ kubernetes==32.0.1
 langchain==0.3.25
 langchain-community==0.3.24
 langchain-core==0.3.63
-langchain-openai==0.3.19
 langchain-text-splitters==0.3.8
 langdetect==1.0.9
 langsmith==0.3.43
@@ -97,7 +96,6 @@ numpy==2.2.6
 oauthlib==3.2.2
 olefile==0.47
 onnxruntime==1.22.0
-openai==1.75.0
 openpyxl==3.1.5
 opentelemetry-api==1.33.1
 opentelemetry-exporter-otlp-proto-common==1.33.1
