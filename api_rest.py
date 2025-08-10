@@ -10,7 +10,7 @@ app = FastAPI(title="AFRAFEP API", version="1.0")
 # Configura CORS para permitir o front acessar a API
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # depois pode trocar para o domínio do seu front
+    allow_origins=["*"],  # depois trocar para o domínio do front
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
