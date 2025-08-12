@@ -50,61 +50,61 @@ git clone https://github.com/seu-usuario/cupom-inteligente.git
 cd cupom-inteligente
 ```
 ## 2. Backend — instalar dependências
+'''
 cd backend
 pip install -r requirements.txt
-
+'''
 ## 3. Configurar variáveis de ambiente (backend)
 No diretório backend/, crie o arquivo .env com sua chave API:
 
-# Usando OpenAI (padrão)
-OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+### Usando OpenAI (padrão)
+'''OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxx'''
 
-# OU Google Gemini (opcional)
-# GEMINI_API_KEY=ya29.xxxxxx
+### OU Google Gemini (opcional)
+'''GEMINI_API_KEY=ya29.xxxxxx'''
 Dica: Gere a chave OpenAI em https://platform.openai.com/api-keys
 Para Gemini, use o console do Google/AI Studio.
 
-##4. Rodar o backend
+## 4. Rodar o backend
 Dentro da pasta backend/, execute:
 
-uvicorn api_rest:app --host 0.0.0.0 --port 8000 --reload
+'''uvicorn api_rest:app --host 0.0.0.0 --port 8000 --reload'''
 
 Ou, se estiver na raiz do projeto:
 
-uvicorn backend.api_rest:app --host 0.0.0.0 --port 8000 --reload
+'''uvicorn backend.api_rest:app --host 0.0.0.0 --port 8000 --reload'''
 
 A API ficará acessível em:
 
-http://SEU_IP_LOCAL:8000
+'''http://SEU_IP_LOCAL:8000''
 (Substitua SEU_IP_LOCAL pelo IP do seu PC, ex.: 192.168.1.8)
 
-##5. Frontend — instalar e iniciar
+## 5. Frontend — instalar e iniciar
 
-cd ../frontend
-npm install
-Opção A — Editar API_URL direto no código
+'''cd ../frontend
+npm install'''
+### Opção A — Editar API_URL direto no código
 Abra src/components/ChatApp.vue e altere:
 
-const API_URL = 'http://192.168.1.8:8000' // seu IP local
-
-Opção B — Usar variável de ambiente (Vite)
+'''const API_URL = 'http://192.168.1.8:8000' // seu IP local'''
+### Opção B — Usar variável de ambiente (Vite)
 Crie .env na pasta frontend/ com:
 
-VITE_API_URL=http://192.168.1.8:8000
+'''VITE_API_URL=http://192.168.1.8:8000'''
 
 No código, use:
 
-const API_URL = import.meta.env.VITE_API_URL
+'''const API_URL = import.meta.env.VITE_API_URL'''
 
 ## 6. Rodar o frontend (acesso via Wi-Fi)
 
-npm run dev -- --host 0.0.0.0
-# ou, se usa "serve":
-# npm run serve -- --host 0.0.0.0
+'''npm run dev -- --host 0.0.0.0'''
+ ou, se usa "serve":
+'''npm run serve -- --host 0.0.0.0'''
 
-Acesse pelo navegador no PC ou celular (mesma rede Wi-Fi):
+###Acesse pelo navegador no PC ou celular (mesma rede Wi-Fi):
 
-http://SEU_IP_LOCAL:5173
+'''http://SEU_IP_LOCAL:5173'''
 (Pode variar a porta: 8080, 3000...)
 
 ## 7. Testando no celular (mesma rede Wi-Fi)
@@ -153,3 +153,4 @@ cupom-inteligente/
 │   │   └── ...
 │   └── package.json
 └── README.md
+
