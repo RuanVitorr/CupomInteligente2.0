@@ -79,17 +79,21 @@ uvicorn api_rest:app --host 0.0.0.0 --port 8000 --reload
 Ou, se estiver na raiz do projeto:
 
 ```bash
-uvicorn backend.api_rest:app --host 0.0.0.0 --port 8000 --reload```
+uvicorn backend.api_rest:app --host 0.0.0.0 --port 8000 --reload
+```
 
 A API ficará acessível em:
 
-'''http://SEU_IP_LOCAL:8000''
+```bash
+http://SEU_IP_LOCAL:8000
+```
 (Substitua SEU_IP_LOCAL pelo IP do seu PC, ex.: 192.168.1.8)
 
 ## 5. Frontend — instalar e iniciar
 
-'''cd ../frontend
-npm install'''
+```cd ../frontend
+npm install
+```
 ### Opção A — Editar API_URL direto no código
 Abra src/components/ChatApp.vue e altere:
 
@@ -160,6 +164,7 @@ cupom-inteligente/
 │   │   └── ...
 │   └── package.json
 └── README.md
+
 
 
 
