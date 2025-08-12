@@ -50,36 +50,36 @@ git clone https://github.com/seu-usuario/cupom-inteligente.git
 cd cupom-inteligente
 ```
 ## 2. Backend — instalar dependências
-'''bash
+```bash
 cd backend
 pip install -r requirements.txt
-'''
+```
 ## 3. Configurar variáveis de ambiente (backend)
 No diretório backend/, crie o arquivo .env com sua chave API:
 
 ### Usando OpenAI (padrão)
-'''bash
+```bash
 OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxx
-'''
+```
 
 ### OU Google Gemini (opcional)
-'''bash
+```bash
 GEMINI_API_KEY=ya29.xxxxxx
-'''
+```
 Dica: Gere a chave OpenAI em https://platform.openai.com/api-keys
 Para Gemini, use o console do Google/AI Studio.
 
 ## 4. Rodar o backend
 Dentro da pasta backend/, execute:
 
-'''bash
+```bash
 uvicorn api_rest:app --host 0.0.0.0 --port 8000 --reload
-'''
+```
 
 Ou, se estiver na raiz do projeto:
 
-'''bash
-uvicorn backend.api_rest:app --host 0.0.0.0 --port 8000 --reload'''
+```bash
+uvicorn backend.api_rest:app --host 0.0.0.0 --port 8000 --reload```
 
 A API ficará acessível em:
 
@@ -160,5 +160,6 @@ cupom-inteligente/
 │   │   └── ...
 │   └── package.json
 └── README.md
+
 
 
