@@ -97,25 +97,27 @@ npm install
 ### Opção A — Editar API_URL direto no código
 Abra src/components/ChatApp.vue e altere:
 
-'''const API_URL = 'http://192.168.1.8:8000' // seu IP local'''
+```
+const API_URL = 'http://192.168.1.8:8000' // seu IP local
+```
 ### Opção B — Usar variável de ambiente (Vite)
 Crie .env na pasta frontend/ com:
 
-'''VITE_API_URL=http://192.168.1.8:8000'''
+```VITE_API_URL=http://192.168.1.8:8000```
 
 No código, use:
 
-'''const API_URL = import.meta.env.VITE_API_URL'''
+```const API_URL = import.meta.env.VITE_API_URL```
 
 ## 6. Rodar o frontend (acesso via Wi-Fi)
 
-'''npm run dev -- --host 0.0.0.0'''
+```npm run dev -- --host 0.0.0.0```
  ou, se usa "serve":
-'''npm run serve -- --host 0.0.0.0'''
+```npm run serve -- --host 0.0.0.0```
 
 ###Acesse pelo navegador no PC ou celular (mesma rede Wi-Fi):
 
-'''http://SEU_IP_LOCAL:5173'''
+```http://SEU_IP_LOCAL:5173```
 (Pode variar a porta: 8080, 3000...)
 
 ## 7. Testando no celular (mesma rede Wi-Fi)
@@ -164,6 +166,7 @@ cupom-inteligente/
 │   │   └── ...
 │   └── package.json
 └── README.md
+
 
 
 
