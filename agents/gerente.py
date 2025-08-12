@@ -7,7 +7,7 @@ load_dotenv()
 
 def criar_gerente(conhecimento, openai_key):
     llm = ChatOpenAI(
-        model="gpt-3.5-turbo",       # ou "gpt-4" se quiser gastar mais crédito (e dinheiro)
+        model="gpt-3.5-turbo",       
         temperature=0.7,
         max_tokens=300,
         openai_api_key=os.getenv("OPENAI_API_KEY")  # pega chave do .env
